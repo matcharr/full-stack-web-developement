@@ -1,4 +1,5 @@
-image: node:buster
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
   - init: npm install
