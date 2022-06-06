@@ -1,7 +1,7 @@
 tasks:
-  - init: |
+  - init: >
+      npm install &&
       npm install -g npm@8.12.1
-      npm install
     command: npm run dev
 
 ports:
