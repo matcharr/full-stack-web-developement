@@ -1,7 +1,11 @@
 tasks:
-  - init: npm install
+  - init: npm install -g npm@8.12.1
     command: npm run dev
 
 ports:
   - port: 3000
     onOpen: open-preview
+
+vscode:
+  extensions:
+    - svelte.svelte-vscode
