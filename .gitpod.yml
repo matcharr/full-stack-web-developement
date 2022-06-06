@@ -1,10 +1,13 @@
 tasks:
-  - init: npm install && npm install -g npm@8.12.1
-    command: npm run dev
+  - init: npm install
+    command: >
+     npm install -g npm@8.12.1 && 
+     export HMR_HOST=`gp url 3000` && 
+     npm run dev
 
 ports:
   - port: 3000
-    onOpen: open-preview
+    onOpen: open-browser
 
 vscode:
   extensions:
