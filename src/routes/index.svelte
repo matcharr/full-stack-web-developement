@@ -3,6 +3,7 @@
 
 	export const load: Load = async ({ fetch }) => {
 		const res = await fetch('/todos.json');
+
 		if (res.ok) {
 			const todos = await res.json();
 			console.log(todos);
