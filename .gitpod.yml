@@ -8,7 +8,7 @@ tasks:
     env:
       DATABASE_URL: postgres://gitpod@localhost/todos
 
-  - command: npx prisma studio
+  - command: npm install prisma & npx prisma studio
     env:
       DATABASE_URL: postgres://gitpod@localhost/todos
 
