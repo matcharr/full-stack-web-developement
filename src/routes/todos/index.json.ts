@@ -6,8 +6,6 @@ export const get: RequestHandler = (request) => {
 };
 
 export const post: RequestHandler<{}, FormData> = (request) => {
-	// const formData = await request.formData();
-
 	return api(request, {
 		uid: `${Date.now()}`, // TODO: Replace with the UID from the database
 		created_at: new Date(),

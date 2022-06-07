@@ -9,5 +9,6 @@ export const del: RequestHandler = (request) => {
 export const patch: RequestHandler<{}, FormData> = (request) => {
 	return api(request, {
 		text: request.body.get('text')
+		done: request.body.has('done') ? !!request.body.get('done') : undefined
 	});
 };
