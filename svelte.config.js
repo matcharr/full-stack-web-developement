@@ -10,8 +10,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		methodOverride: {
-			key: '_method',
-			allowed: ['post', 'put', 'delete']
+			allowed: ['PUT', 'PATCH', 'DELETE']
 		},
 		vite: {
 			server: {
