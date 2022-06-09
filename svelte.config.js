@@ -9,6 +9,10 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		methodOverride: {
+			key: '_method',
+			allowed: ['post', 'put', 'delete']
+		},
 		vite: {
 			server: {
 				hmr: {
