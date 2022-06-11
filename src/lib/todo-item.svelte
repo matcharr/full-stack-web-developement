@@ -31,7 +31,7 @@
 		method="POST"
 		use:enhance={{ result: processDeletedTodoResult }}
 	>
-		<button aria-label="Delete todo" class="DELETE" />
+		<button aria-label="Delete todo" class="delete" />
 	</form>
 </div>
 
