@@ -51,7 +51,7 @@
 
 	<form
 		action="/todos.json"
-		method="post"
+		method="POST"
 		class="new"
 		use:enhance={{ result: processNewTodoResult }}
 	>

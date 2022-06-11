@@ -8,8 +8,8 @@
 
 <div class="todo" class:done={todo.done}>
 	<form
-		action="/todos/{todo.uid}.json?_method=patch"
-		method="post"
+		action="/todos/{todo.uid}.json?_method=PATCH"
+		method="POST"
 		use:enhance={{ result: processUpdatedTodoResult }}
 	>
 		<input type="hidden" name="done" value={todo.done ? '' : 'true'} />
@@ -17,8 +17,8 @@
 	</form>
 
 	<form
-		action="/todos/{todo.uid}.json?_method=patch"
-		method="post"
+		action="/todos/{todo.uid}.json?_method=PATCH"
+		method="POST"
 		class="text"
 		use:enhance={{ result: processUpdatedTodoResult }}
 	>
@@ -27,11 +27,11 @@
 	</form>
 
 	<form
-		action="/todos/{todo.uid}.json?_method=delete"
-		method="post"
+		action="/todos/{todo.uid}.json?_method=DELETE"
+		method="POST"
 		use:enhance={{ result: processDeletedTodoResult }}
 	>
-		<button aria-label="Delete todo" class="delete" />
+		<button aria-label="Delete todo" class="DELETE" />
 	</form>
 </div>
 
